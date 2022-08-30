@@ -21,6 +21,13 @@ public class controllergiay {
 @Qualifier("giayserviceimpl") 
 private GiayService giayservicce;
 
+@RequestMapping(value = {"/"},method = RequestMethod.GET)
+@ResponseBody
+public String getalll(){
+	 String aa = "hahaha";
+	return aa;
+}
+
 @RequestMapping(value = {"/all"},method = RequestMethod.GET)
 @ResponseBody
 public List<Giay> getall(){
