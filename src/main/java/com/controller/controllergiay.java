@@ -28,7 +28,7 @@ public String getalll(){
 	return aa;
 }
 
-@RequestMapping(value = {"/all"},method = RequestMethod.GET)
+@RequestMapping(value = {"/All"},method = RequestMethod.GET)
 @ResponseBody
 public List<Giay> getall(){
 	 List<Giay> Giay = giayservicce.getallgiay();
