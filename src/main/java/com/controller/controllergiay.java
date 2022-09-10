@@ -34,5 +34,11 @@ public List<Giay> getall(){
 	 List<Giay> Giay = giayservicce.getallgiay();
 	return Giay;
 }
+@RequestMapping(value = {"/HighTop"},method = RequestMethod.GET)
+@ResponseBody
+public List<Giay> getHighTop(){
+	 List<Giay> Giay = giayservicce.getallgiay();
+	return Giay;
+}
 
 }
