@@ -2,8 +2,8 @@ package com.service;
 
 import java.util.List;
 
-import com.entity.Giay;
+import com.entity.Shoes;
 
 public interface GiayService {
-	public List<Giay> getallgiay();
+	public List<Shoes> getallgiay();
 }

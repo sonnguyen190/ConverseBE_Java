@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table
-public class Giay {
+public class Shoes {
 	
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -79,7 +79,7 @@ public void setPlatform(boolean platform) {
 	this.platform = platform;
 }
 
-public Giay(int id, String ten_giay, int price, String hinh_giay, String loai_giay, boolean platform) {
+public Shoes(int id, String ten_giay, int price, String hinh_giay, String loai_giay, boolean platform) {
 	super();
 	this.id = id;
 	this.ten_giay = ten_giay;
@@ -89,7 +89,7 @@ public Giay(int id, String ten_giay, int price, String hinh_giay, String loai_gi
 	this.platform = platform;
 }
 
-public Giay() {
+public Shoes() {
 	super();
 }
 

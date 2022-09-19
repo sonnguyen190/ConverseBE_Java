@@ -7,17 +7,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.dao.GiayRepositopry;
-import com.entity.Giay;
+import com.dao.ShoesRepositopry;
+import com.entity.Shoes;
 import com.service.GiayService;
 @Service
 @Transactional
 public class giayserviceimpl implements GiayService{
 	@Autowired
-	private GiayRepositopry giayrepo;
+	private ShoesRepositopry giayrepo;
 	
 	@Override
-	public List<Giay> getallgiay() {
+	public List<Shoes> getallgiay() {
 		
 		return giayrepo.getAllGiay();
 	}
